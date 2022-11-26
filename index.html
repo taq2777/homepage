@@ -10,6 +10,12 @@
 			padding: 0px 50px 50px 50px;
 			font-family: "游ゴシック";
 		}
+		.imgs {
+			display: flex;
+		}
+		.img {
+			border: 10px solid #FFFFFF;
+		}
 	</style>
 	
 	<script>
@@ -32,27 +38,34 @@
 	<h1><u>taqのコードを公開するサイト</u></h1>
 	
 	<p>現在時刻: <span id="clock"></span></p>
-	
-		<div>
+		
 		<br>
+		<div>
 		<p><a href="https://taq.hatenadiary.jp/" target="blank">自身のブログ</a>で書いているprocessingのプログラムをp5.jsで実行できるようにして、こちらのウェブページに公開していきます。</p>
 		<p>画像をクリックすると実行画面に移ります。</p>
 		<p>htmlの練習も兼ねているので、いろいろな要素を使ってみます。ごちゃごちゃするかもしれません。</p>
 		</div>
 		
-		<div>
-		<br>
-		<h2>ウラムの螺旋</h2>
-			<p>コードの詳細は<a href="https://taq.hatenadiary.jp/entry/2022/03/10/093000" target="_blank">こちら</a>から。</p>
-			<a href="ulam/ulam.html"><img src="ulam/ulam.png" alt="" width=200 height=200></img></a>
+		<div class="imgs">
+	 		<br>
+	 		<div class="img">
+		 		<h3>ウラムの螺旋</h3>
+		 			<a href="ulam/ulam.html"><img src="ulam/ulam.png" alt="" width=200 height=200></img></a>
+			</div>
+			
+			<br>
+			<div class="img">
+				<h3>畑政義写像</h3>
+					<a href="hata/hata.html"><img src="hata/hata.png" alt="" width=200 height=200></img></a>
+			</div>
+			
+			<br>
+			<div class="img">
+				<h3>木 (フラクタル)</h3>
+					<a href="tree/tree.html"><img src="tree/tree.png" alt="" width=200 height=200></img></a>
+			</div>
 		</div>
-		
-		<div>
-		<br>
-		<h2>畑政義写像</h2>
-			<p>コードの詳細は<a href="https://taq.hatenadiary.jp/entry/2022/11/05/150500" target="_blank">こちら</a>から。</p>
-			<a href="hata/hata.html"><img src="hata/hata.png" alt="" width=200 height=200></img></a>
-		</div>
+
 </body>
 
 </html>
