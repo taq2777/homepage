@@ -28,7 +28,7 @@ function setup(){
   canvas.style("z-index", -1);
   
   scale = 250; // スケール
-  n = 14; // 繰り返し回数
+  n = 13; // 繰り返し回数
   
   // 初期値
   zR = 0;
