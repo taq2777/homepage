@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+	<title>ウラムの螺旋</title>
+	
+	<style>
+		body {
+			padding: 0px 50px 50px 50px;
+			font-family: "游ゴシック";
+		}
+	</style>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+	<script src="ulam.js"></script>
+	<script>
+		function saveImage(){
+			saveCanvas(canvas, "image", "png");
+		}
+	</script>
+</head>
+
+<body>
+	<h1><span style="background-color:#FFFFFF">ウラムの螺旋</span></h1>
+		<input type="button" value="save" onclick="saveImage()">
+</body>
+
+</html>
