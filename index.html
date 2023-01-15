@@ -3,7 +3,8 @@
 <html lang="ja">
 
 <head>
-	<title>taqのコードを公開するサイト</title>
+	<title>taqの制作物を公開するサイト</title>
+	<link rel="icon" type="image/png" href="icon.png">
 	
 	<style>
 		body {
@@ -12,6 +13,7 @@
 		}
 		.imgs {
 			display: flex;
+			flex-wrap: wrap;
 		}
 		.img {
 			border: 10px solid #FFFFFF;
@@ -30,15 +32,15 @@
 		function hello(){
 			document.write("HELLO");
 		}
-		// pwd = prompt("パスワードを入力してください。", "");
+		// test = prompt("テスト", "");
 	</script>
 </head>
 
 <body>
-	<h1><u>taqのコードを公開するサイト</u></h1>
+	<h1><u>taqの制作物を公開するサイト</u></h1>
 	
 	<!-- <p>現在時刻: <span id="clock"></span></p> -->
-	<p>最終更新日: 2022/11/27</p>
+	<p>最終更新日: 2023/01/15</p>
 		
 		<br>
 		<div>
@@ -62,7 +64,7 @@
 			
 			<br>
 			<div class="img">
-				<h3>木 (フラクタル)</h3>
+				<h3>木</h3>
 					<a href="tree/tree.html"><img src="tree/tree.png" alt="" width=200 height=200></img></a>
 			</div>
 			
@@ -70,6 +72,18 @@
 			<div class="img">
 				<h3>ライフゲーム</h3>
 					<a href="life/life.html"><img src="life/life.png" alt="" width=200 height=200></img></a>
+			</div>
+			
+			<br>
+			<div class="img">
+				<h3>ボロノイ図</h3>
+					<a href="voronoi/voronoi.html"><img src="voronoi/voronoi.png" alt="" width=200 height=200></img></a>
+			</div>
+			
+			<br>
+			<div class="img">
+				<h3>拡散律速凝集</h3>
+					<a href="dla/dla.html"><img src="dla/dla.png" alt="" width=200 height=200></img></a>
 			</div>
 		</div>
 

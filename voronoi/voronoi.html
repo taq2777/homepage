@@ -3,7 +3,7 @@
 <html lang="ja">
 
 <head>
-	<title>木</title>
+	<title>ボロノイ図</title>
 	
 	<style>
 		body {
@@ -13,7 +13,7 @@
 	</style>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
-	<script src="tree.js"></script>
+	<script src="voronoi.js"></script>
 	<script>
 		function saveImage(){
 			saveCanvas(canvas, "image", "png");
@@ -22,8 +22,8 @@
 </head>
 
 <body>
-	<h1><span style="background-color:#FFFFFF">木</span></h1>
-		<p><span style="background-color:#FFFFFF">コードの詳細は<a href="https://taq.hatenadiary.jp/entry/2021/10/02/102208" target="_blank">こちら</a>から。</span></p>
+	<h1>ボロノイ図</h1>
+		<p>コードの詳細は<a href="https://taq.hatenadiary.jp/entry/2022/12/25/160000" target="_blank">こちら</a>から。</p>
 		<input type="button" value="save" onclick="saveImage()">
 </body>
 
