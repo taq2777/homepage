@@ -2,6 +2,7 @@ let len;
 let col, row;
 let c = [];
 let p = false;
+let count = 0;
 
 function setup(){
     createCanvas(500, 500);
@@ -117,7 +118,15 @@ function draw(){
 }
 
 function keyPressed(){
-    if(key == 's') p = true;
+    if(key == 's'){
+    	if(count == 0){
+    		p = true;
+    		count = 1;
+    	}
+    	else if(count == 1){
+    		count = 2;
+    	}
+    }
     
     if(key == 'c'){
         for(i = 0; i < col; i ++){
@@ -129,5 +138,10 @@ function keyPressed(){
 }
 
 function keyReleased(){
-    if(key == 's') p = false;
+    if(key == 's'){
+    	if(count == 2){
+    		p = false;
+    		count = 0;
+    	}
+    }
 }
