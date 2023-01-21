@@ -1,8 +1,10 @@
 n = 100;
 particles = [];
+f = -1;
 
 function setup(){
   createCanvas(500, 500);
+  frameRate(10000);
   noStroke();
   
   particles.push(new Particle(0, 0, false));
@@ -79,8 +81,16 @@ class Particle{
   }
   
   display(){
-    if(this.moving == true){ fill(255); }
-    else{ fill(255, 0, 0); }
-    ellipse(this.x, this.y, this.d, this.d);
+  	if(f == 1){
+    	if(this.moving == true){ fill(255); }
+    	else{ fill(255, 0, 0); }
+    	ellipse(this.x, this.y, this.d, this.d);
+    }
+    else if(f == -1){
+	    if(this.moving == false){
+	    	fill(255, 0, 0);
+	    	ellipse(this.x, this.y, this.d, this.d);
+	    }
+	}
   }
 }

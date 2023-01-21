@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+	<title>天体</title>
+	
+	<style>
+		body {
+			padding: 0px 50px 50px 50px;
+			font-family: "游ゴシック";
+		}
+	</style>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+	<script src="planet.js"></script>
+	<script>
+		function saveImage(){
+			saveCanvas(canvas, "image", "png");
+		}
+	</script>
+</head>
+
+<body>
+	<h1>天体</h1>
+		<p>ドラッグで引っ張って（モン○トみたいに）天体を追加できます。</p>
+		<p>題は天体ということにしていますが、ボーアの原子模型とも言えます。</p>
+		<p>コードの詳細は<a href="https://taq.hatenadiary.jp/entry/2021/10/22/210000" target="_blank">こちら</a>から。</p>
+		<input type="button" value="save" onclick="saveImage()">
+</body>
+
+</html>

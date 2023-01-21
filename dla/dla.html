@@ -18,12 +18,17 @@
 		function saveImage(){
 			saveCanvas(canvas, "image", "png");
 		}
+		function displayONOFF(){ f *= -1; }
 	</script>
 </head>
 
 <body>
 	<h1>拡散律速凝集</h1>
+		<p>「周りの粒子の表示」のチェックボックスにチェックを入れると、周りの粒子が表示されます。</br>（集合体恐怖症の方はやめておいた方が良いかもしれません…）</p>
 		<p>コードの詳細は<a href="https://taq.hatenadiary.jp/entry/2022/10/02/093000" target="_blank">こちら</a>から。</p>
+		
+		周りの分子の表示<input type="checkbox" value="ON" onclick="displayONOFF()">
+		</br>
 		<input type="button" value="save" onclick="saveImage()">
 </body>
 

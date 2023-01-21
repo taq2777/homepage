@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+	<title>ボイド</title>
+	
+	<style>
+		body {
+			padding: 0px 50px 50px 50px;
+			font-family: "游ゴシック";
+		}
+	</style>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+	<script src="boid.js"></script>
+	<script>
+		function saveImage(){
+			saveCanvas(canvas, "image", "png");
+		}
+	</script>
+</head>
+
+<body>
+	<h1>ボイド</h1>
+		<p>クリックでボイドを追加できます。</br>マウスを近づけると避けます。</p>
+		<p>コードの詳細は<a href="https://taq.hatenadiary.jp/entry/2022/03/02/100000" target="_blank">こちら</a>から。</p>
+		<input type="button" value="save" onclick="saveImage()">
+</body>
+
+</html>
